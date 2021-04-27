@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".ui.slideshow.SlideshowFragment">
+
+    <TextView
+        android:id="@+id/textFragmentSlideshowHeater"
+        style="@style/FragmentSlideshowTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/heater_status"
+
+        app:drawableEndCompat="@drawable/ic_baseline_check_circle_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/textFragmentSlideshowPump"
+        style="@style/FragmentSlideshowTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/pump_status"
+
+        app:drawableEndCompat="@drawable/ic_baseline_remove_circle_outline_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textFragmentSlideshowHeater" />
+
+
+    <LinearLayout
+        android:id="@+id/layoutFragmentSlideshowCauldronTemp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textFragmentSlideshowPump">
+
+        <TextView
+            style="@style/FragmentSlideshowTextStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/cauldron_text" />
+
+        <TextView
+            android:id="@+id/textFragmentSlideshowCauldronTemp"
+            style="@style/FragmentSlideshowTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:text="@string/cauldron_text_temp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutFragmentSlideshowHeaterTemp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layoutFragmentSlideshowCauldronTemp">
+
+        <TextView
+            style="@style/FragmentSlideshowTextStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/heater_text" />
+
+        <TextView
+            android:id="@+id/textFragmentSlideshowHeaterTemp"
+            style="@style/FragmentSlideshowTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:text="@string/heater_text_temp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textFragmentSlideshowLastUpdate"
+        style="@style/FragmentSlideshowTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="@string/textFragmentSlideshowLastUpdate"
+        app:layout_constraintTop_toBottomOf="@+id/layoutFragmentSlideshowHeaterTemp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

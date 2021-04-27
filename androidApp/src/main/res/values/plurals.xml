@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="textFragmentSlideshowLastUpdateQuantity">
+        <item quantity="zero">%d seconds ago</item>
+        <item quantity="one">%d second ago</item>
+        <item quantity="two">%d seconds ago</item>
+        <item quantity="few">%d seconds ago</item>
+        <item quantity="many">%d seconds ago</item>
+        <item quantity="other">%d seconds ago</item>
+    </plurals>
+</resources>
