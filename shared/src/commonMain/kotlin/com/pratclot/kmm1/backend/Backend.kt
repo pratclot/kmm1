@@ -1,8 +1,8 @@
 package com.pratclot.kmm1.backend
 
+import com.pratclot.kmm1.data.Temps
 import com.pratclot.kmm1.WS_SERVER_HOST
 import com.pratclot.kmm1.WS_SERVER_PATH
-import com.pratclot.kmm1.data.Temps
 import com.pratclot.kmm1.data.toTemps
 import io.ktor.client.HttpClient
 import io.ktor.client.features.websocket.wss

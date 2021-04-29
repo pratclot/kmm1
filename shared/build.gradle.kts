@@ -32,6 +32,7 @@ kotlin {
         val commonMain by getting {
             dependencies {
                 implementation("com.netguru.kissme:common:${properties["versionsKissme"]}")
+                implementation("io.ktor:ktor-client-serialization:${properties["versionsKtor"]}")
             }
         }
         val commonTest by getting {
@@ -43,7 +44,6 @@ kotlin {
         val androidMain by getting {
             dependencies {
                 implementation("com.netguru.kissme:android:${properties["versionsKissme"]}")
-                api("io.ktor:ktor-client-serialization:${properties["versionsKtor"]}")
             }
         }
         val androidTest by getting {
@@ -73,6 +73,5 @@ android {
 dependencies {
     api("io.ktor:ktor-client-websockets:${properties["versionsKtor"]}")
     api("io.ktor:ktor-client-okhttp:${properties["versionsKtor"]}")
-//    api("org.slf4j:slf4j-simple:1.6.1")
     api("io.ktor:ktor-client-serialization:${properties["versionsKtor"]}")
 }

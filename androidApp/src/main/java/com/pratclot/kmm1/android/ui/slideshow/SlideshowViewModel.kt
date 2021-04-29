@@ -10,11 +10,8 @@ import com.pratclot.kmm1.android.repo.RepoAbstraction
 import com.pratclot.kmm1.data.Temps
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.async
 import kotlinx.coroutines.channels.consumeEach
 import kotlinx.coroutines.channels.ticker
-import kotlinx.coroutines.delay
-import kotlinx.coroutines.isActive
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
