@@ -4,7 +4,7 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.pratclot.kmm1.SafeStorage
+import com.pratclot.kmm1.storage.SafeStorage
 import com.pratclot.kmm1.android.di.JwtInterceptor
 import com.pratclot.kmm1.android.repo.RepoAbstraction
 import com.pratclot.kmm1.data.Temps

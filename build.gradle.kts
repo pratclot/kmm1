@@ -6,6 +6,7 @@ buildscript {
         jcenter()
         google()
         mavenCentral()
+        mavenLocal()
     }
     dependencies {
         classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:1.4.32")
@@ -21,7 +22,7 @@ allprojects {
         jcenter()
         mavenCentral()
         maven("https://jitpack.io")
-        maven("https://dl.bintray.com/netguru/maven/")
+        mavenLocal()
     }
 }
 

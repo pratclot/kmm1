@@ -1,16 +1,16 @@
-package com.pratclot.kmm1
+package com.pratclot.kmm1.storage
 
 import com.netguru.kissme.Kissme
 
-object SafeStorage {
+actual object SafeStorage {
     private const val TOKEN = "jwtToken"
     private val storage by lazy { Kissme() }
 
-    fun saveJwtToken(token: String) {
+    actual fun saveJwtToken(token: String) {
         storage.putString(TOKEN, token)
     }
 
-    fun getJwtToken(): String? {
+    actual fun getJwtToken(): String? {
         return storage.getString(TOKEN, null)
     }
 }

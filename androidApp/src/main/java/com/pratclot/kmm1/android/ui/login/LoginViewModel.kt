@@ -3,7 +3,7 @@ package com.pratclot.kmm1.android.ui.login
 import androidx.lifecycle.ViewModel
 import com.google.android.gms.auth.api.signin.GoogleSignInClient
 import com.google.firebase.auth.FirebaseAuth
-import com.pratclot.kmm1.SafeStorage
+import com.pratclot.kmm1.storage.SafeStorage
 import com.pratclot.kmm1.android.di.JwtInterceptor
 import dagger.hilt.android.lifecycle.HiltViewModel
 import javax.inject.Inject
