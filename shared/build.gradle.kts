@@ -12,13 +12,13 @@ version = "1.0"
 kotlin {
     android()
 
-    val iosTarget: (String, KotlinNativeTarget.() -> Unit) -> KotlinNativeTarget =
-        if (System.getenv("SDK_NAME")?.startsWith("iphoneos") == true)
-            ::iosArm64
-        else
-            ::iosX64
-
-    iosTarget("ios") {}
+//    val iosTarget: (String, KotlinNativeTarget.() -> Unit) -> KotlinNativeTarget =
+//        if (System.getenv("SDK_NAME")?.startsWith("iphoneos") == true)
+//            ::iosArm64
+//        else
+//            ::iosX64
+//
+//    iosTarget("ios") {}
 
     cocoapods {
         summary = "Some description for the Shared Module"
@@ -31,7 +31,6 @@ kotlin {
     sourceSets {
         val commonMain by getting {
             dependencies {
-                implementation("com.netguru.kissme:common:${properties["versionsKissme"]}")
                 implementation("io.ktor:ktor-client-serialization:${properties["versionsKtor"]}")
             }
         }
@@ -52,12 +51,12 @@ kotlin {
                 implementation("junit:junit:4.13.2")
             }
         }
-        val iosMain by getting {
-            dependencies {
-                implementation("com.netguru.kissme:ios:${properties["versionsKissme"]}")
-            }
-        }
-        val iosTest by getting
+//        val iosMain by getting {
+//            dependencies {
+////                implementation("com.netguru.kissme:ios:${properties["versionsKissme"]}")
+//            }
+//        }
+//        val iosTest by getting
     }
 }
 
